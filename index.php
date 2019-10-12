@@ -1,3 +1,10 @@
+<?php
+ session_start();
+  $username =$_SESSION["username"];
+?>
+
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,8 +23,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+
+        <p><?php echo "welcome".$_SESSION["username"]; ?>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -52,7 +63,8 @@
             <!-- Author -->
             <p class="lead">
                 by
-                <a href="#">Ala' Mohammad</a>
+                <a href="#"><p> welcome<?php echo"".$_SESSION["username"]; ?>
+                </a>
             </p>
             <!-- Preview Image -->
             <img class="img-fluid center" src="images/php-1024x538.png" alt="">
@@ -98,7 +110,8 @@
             </p>
             <hr>
             <h4>5. Dashboard page </h4>
-            <p>When the user redirected to the dashboard page, the dashboard should displayed the welcome message "Welcome USER_NAME"</p>
+            <p>When the user redirected to the dashboard page, the dashboard should displayed the welcome message
+                ?></p>
 
             <hr>
             <h3> Section 2: Databases </h3>
